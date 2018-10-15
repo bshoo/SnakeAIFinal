@@ -3,8 +3,8 @@
 
 generation g;
 int radarDistance = 2; //Change this to change how far the snake can see (Certain terms and conditions apply)
-boolean useBiggerRadar = false; //Control what the snake sees (don't change this, pretty sure this no longer works)
-boolean useFullScreenVector = false; //Also control what the snake sees (also don't change this, this definitely doesn't work)
+boolean useBiggerRadar = false; //Controls what the snake sees (don't change this, pretty sure this no longer works)
+boolean useFullScreenVector = false; //Also controls what the snake sees (also don't change this, this definitely doesn't work)
 int currentGen = 0;
 boolean warpSpeed = false;
 int[] layerStructure = {!useFullScreenVector ? (useBiggerRadar ? (2 * radarDistance + 1)*(radarDistance+1) + 21 : radarDistance * 4 + 21) : 4625, 32, 16, 3}; //32 and 6 worked
