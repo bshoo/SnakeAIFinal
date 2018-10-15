@@ -2,9 +2,9 @@
 //Make sure it can form a nand, nor, and not gate
 
 generation g;
-int radarDistance = 2; //CHANGE THIS TO CHANGE THE DISTANCE THE SNAKE CAN SEEEEEEEEEE (Certain terms and conditions apply)
-boolean useBiggerRadar = false; //Control what the snake sees
-boolean useFullScreenVector = false; //Also control what the snake sees, which I hope was relatively obvious
+int radarDistance = 2; //Change this to change how far the snake can see (Certain terms and conditions apply)
+boolean useBiggerRadar = false; //Control what the snake sees (don't change this, pretty sure this no longer works)
+boolean useFullScreenVector = false; //Also control what the snake sees (also don't change this, this definitely doesn't work)
 int currentGen = 0;
 boolean warpSpeed = false;
 int[] layerStructure = {!useFullScreenVector ? (useBiggerRadar ? (2 * radarDistance + 1)*(radarDistance+1) + 21 : radarDistance * 4 + 21) : 4625, 32, 16, 3}; //32 and 6 worked
@@ -14,7 +14,7 @@ ArrayList<Integer> recordSnakeLength = new ArrayList<Integer>();
 ArrayList<Float> pastLengths = new ArrayList<Float>();
 game gam = new game(4, 5);
 int focus = 0;
-boolean foodInRadar = false;
+boolean foodInRadar = false; //Don't change this either
 int largestSnake = 0;
 
 void setup() {
